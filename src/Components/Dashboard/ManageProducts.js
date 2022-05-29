@@ -9,7 +9,7 @@ const ManageProducts = () => {
         const headers = { 
             'Authorization': `Bearer ${localStorage.getItem('accessToken')}`,                
             };     
-        axios.get(`http://localhost:5000/products`,{headers})
+        axios.get(`https://immense-oasis-80254.herokuapp.com/products`,{headers})
         .then(data => setProducts(data.data))
     }, [products])
     return (

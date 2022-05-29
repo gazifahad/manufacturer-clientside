@@ -6,7 +6,7 @@ const MakeAdmin = () => {
     const [users, setUsers] = useState([]);
 
     useEffect(() => {        
-        axios.get(`http://localhost:5000/users`)
+        axios.get(`https://immense-oasis-80254.herokuapp.com/users`)
         .then(data => setUsers(data.data))
     }, [users])
 

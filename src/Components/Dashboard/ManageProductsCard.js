@@ -3,7 +3,7 @@ import React from 'react';
 
 const ManageProductsCard = ({product}) => {
     const deleteProduct = () => {
-        axios.delete(`http://localhost:5000/product/${product._id}`).then(data => console.log(data.data))
+        axios.delete(`https://immense-oasis-80254.herokuapp.com/product/${product._id}`).then(data => console.log(data.data))
     }
     return (
         <div>

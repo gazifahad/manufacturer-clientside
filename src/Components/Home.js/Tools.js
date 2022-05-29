@@ -7,7 +7,7 @@ const Tools = () => {
     const [products, setProducts] = useState([]);
     
     useEffect(()=>{
-        axios.get('http://localhost:5000/products')
+        axios.get('https://immense-oasis-80254.herokuapp.com/products')
         .then(data => loadProducts(data.data));  
     },[]);  
 

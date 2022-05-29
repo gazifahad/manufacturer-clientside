@@ -6,7 +6,7 @@ const ManageAllOrders = () => {
     const [orders, setOrders] = useState([]);
 
     useEffect(() => {            
-        axios.get(`http://localhost:5000/orders`)
+        axios.get(`https://immense-oasis-80254.herokuapp.com/orders`)
         .then(data => setOrders(data.data))
     }, [orders])
     return (
