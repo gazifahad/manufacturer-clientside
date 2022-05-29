@@ -2,7 +2,7 @@ import React from 'react';
 
 const Blog = () => {
     return (
-        <div className='container mx-auto p-12'>
+        <div className='container mt-5 mx-auto p-12'>
             <article className="mb-10">
                 <h3 className="text-primary text-2xl">How will you improve the performance of a React Application?</h3>
                 <div className='my-10'>

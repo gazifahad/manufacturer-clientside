@@ -7,10 +7,9 @@ module.exports = {
       {
         'mytheme': { // custom theme
           'primary' : '#7f75ae',
-          // 'secondary':'#ffff00',
           'primary-focus' : '#31c127',
           'bg' :'#31c127',
-          // 'primary-content' : '#ffff00',
+          'primary-content' : '#ffff00',
           // other colors
         },
         'myothertheme': { // custom theme
