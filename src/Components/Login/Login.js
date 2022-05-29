@@ -73,7 +73,7 @@ const Login = () => {
         </div>
 
         <div className="mb-3 card-actions">
-            <button  onClick={() => signInWithGoogle()}  className="btn btn-outline btn-accent w-full">Google</button>
+            <button  onClick={() => signInWithGoogle()}  className="btn btn-outline btn-accent w-full">Google </button>
         </div> 
         <div className="mb-3 card-actions">
             <button onClick={() => signInWithFacebook()}  className="btn btn-outline btn-accent w-full">Facebook</button>
