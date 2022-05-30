@@ -8,18 +8,18 @@ const BusinessSummery = () => {
     <div className="flex flex-col lg:flex-row align-middle">
   
   <div className="stat">
-    <div className="stat-title">Monthly Revenue</div>
-    <div className="stat-value text-orange-700">31K</div>    
+    <div className="stat-title"> We Get Monthly Revenue Of</div>
+    <div className="stat-value text-orange-700">300K+</div>    
   </div>
   
   <div className="stat">
-    <div className="stat-title">Monthly Orders</div>
-    <div className="stat-value text-orange-700">4,200</div>    
+    <div className="stat-title">We get Monthly Orders Of</div>
+    <div className="stat-value text-orange-700">5000+</div>    
   </div>
   
   <div className="stat">
-    <div className="stat-title">Total Products</div>
-    <div className="stat-value text-orange-700">1,200</div>    
+    <div className="stat-title">Total Products We Serve</div>
+    <div className="stat-value text-orange-700">600+</div>    
   </div>
   
 </div>
