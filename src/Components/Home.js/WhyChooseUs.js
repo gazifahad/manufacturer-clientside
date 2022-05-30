@@ -14,7 +14,7 @@ const WhyChooseUs = () => {
             </div>
             <div>
               <h1 className="text-5xl font-bold">Why Choose Us?</h1>
-              <p className="py-6">We provide unique serivce!</p>              
+              <p className="py-6">We provide authentic products with minmal price, and 100% qualitiy assurance.Safe payment is a bonus</p>              
             </div>
           </div>
         </div>
