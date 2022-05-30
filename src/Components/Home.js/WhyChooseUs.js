@@ -7,8 +7,9 @@ const WhyChooseUs = () => {
         <div className="min-h-screen0">
           <div className="flex flex-col lg:flex-row justify-evenly items-center">
             <div>
+              
             <img
-              src={electrician}
+              src={electrician} alt="lower banner"
               className="max-w-sm rounded-lg"
             />
             </div>
