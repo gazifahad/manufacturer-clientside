@@ -7,7 +7,7 @@ const useAdmin = (user) => {
     useEffect(()=> {
         const userEmail = user?.email;        
         if(userEmail){                       
-            axios.get(`https://immense-oasis-80254.herokuapp.com/admin/${userEmail}`)
+            axios.get(`https://manufacturer-epp7.onrender.com/admin/${userEmail}`)
             .then(data => {
                 setAdmin(data.data.isAdmin);
                 setIsLoading(false);                

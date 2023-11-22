@@ -8,7 +8,7 @@ const Reviews = () => {
     
     useEffect(() => {
        
-        axios.get('https://immense-oasis-80254.herokuapp.com/reviews')
+        axios.get('https://manufacturer-epp7.onrender.com/reviews')
     .then(data => reversedReviews(data.data));
     } ,[]);
 

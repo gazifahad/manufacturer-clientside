@@ -13,7 +13,7 @@ const MyOrders = () => {
       const headers = { 
         'Authorization': `Bearer ${localStorage.getItem('accessToken')}`,                
         };
-        axios.get(` https://immense-oasis-80254.herokuapp.com/orders/${user.email}`,{headers})
+        axios.get(` https://manufacturer-epp7.onrender.com/orders/${user.email}`,{headers})
         .then(data => setOrders(data.data))
         setOrdersLoading(false)
     },[])

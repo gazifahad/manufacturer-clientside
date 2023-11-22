@@ -20,7 +20,7 @@ const Purchase = () => {
       const headers = { 
         'Authorization': `Bearer ${localStorage.getItem('accessToken')}`,                
         };
-      axios.get(`https://immense-oasis-80254.herokuapp.com/product/${id}`,{headers})
+      axios.get(`https://manufacturer-epp7.onrender.com/product/${id}`,{headers})
     .then(data => setProduct(data.data))
     }, [id])
   
@@ -41,7 +41,7 @@ const Purchase = () => {
           isPaid:false,
           isShiped:false
         }
-        axios.post(`https://immense-oasis-80254.herokuapp.com/order`, order)
+        axios.post(`https://manufacturer-epp7.onrender.com/order`, order)
         .then(data => {
           console.log("Order created ", data.data)
 

@@ -14,7 +14,7 @@ const Payment = () => {
     const headers = { 
         'Authorization': `Bearer ${localStorage.getItem('accessToken')}`,                
         };
-    const {data : order, isLoading, refetch} = useQuery(['payment', orderId], () => axios.get(`https://immense-oasis-80254.herokuapp.com/order/${orderId}`,{headers})
+    const {data : order, isLoading, refetch} = useQuery(['payment', orderId], () => axios.get(`https://manufacturer-epp7.onrender.com/order/${orderId}`,{headers})
     .then()
     )
 

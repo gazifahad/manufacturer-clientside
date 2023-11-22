@@ -7,7 +7,7 @@ const Tools = () => {
     const [products, setProducts] = useState([]);
     
     useEffect(()=>{
-        axios.get('https://immense-oasis-80254.herokuapp.com/products')
+        axios.get('https://manufacturer-epp7.onrender.com/products')
         .then(data => loadProducts(data.data));  
     },[]);  
 

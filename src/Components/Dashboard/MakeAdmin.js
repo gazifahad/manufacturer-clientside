@@ -6,7 +6,7 @@ const MakeAdmin = () => {
     const [users, setUsers] = useState([]);
 
     useEffect(() => {        
-        axios.get(`https://immense-oasis-80254.herokuapp.com/users`)
+        axios.get(`https://manufacturer-epp7.onrender.com/users`)
         .then(data => setUsers(data.data))
     }, [users])
 

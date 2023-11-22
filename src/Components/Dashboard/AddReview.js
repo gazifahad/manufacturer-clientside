@@ -21,7 +21,7 @@ const AddReview = () => {
                 rating: data.rating,
                 comment: data.comment                 
             }
-        axios.post('https://immense-oasis-80254.herokuapp.com/review', review, {headers})
+        axios.post('https://manufacturer-epp7.onrender.com/review', review, {headers})
         .then(data => console.log("Review added: ", data))    
     };      
 

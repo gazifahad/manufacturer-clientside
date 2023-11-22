@@ -1,6 +1,6 @@
 # Home Decor Corp #
 ## live site link : https://polite-douhua-e7e846.netlify.app/ ##
-## server side link : https://immense-oasis-80254.herokuapp.com/##
+## server side link : https://manufacturer-epp7.onrender.com/##
 ## key features ##
 - [ ] login via gmail or password.
 - [ ]  User and admin login

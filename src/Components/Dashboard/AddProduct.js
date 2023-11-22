@@ -35,7 +35,7 @@ const AddProduct = () => {
                         addedBy: user.email
 
                     }
-                    axios.post('https://immense-oasis-80254.herokuapp.com/product', product)
+                    axios.post('https://manufacturer-epp7.onrender.com/product', product)
                         .then(data => console.log("Created Successfully: ", data))
                 }
             })
