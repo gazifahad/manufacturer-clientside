@@ -4,11 +4,12 @@ import { useAuthState } from 'react-firebase-hooks/auth';
 import { useForm } from 'react-hook-form';
 import auth from '../../firebase.init';
 import Loading from '../Common/Loading';
+import { useNavigate } from "react-router-dom";
 
 const AddReview = () => {
     const [user, loading, error] = useAuthState(auth);
     const { register, handleSubmit, watch, formState: { errors }, setValue } = useForm();
-
+  const navigate=useNavigate()
     
     const handleFormSubmit = data =>{  
         const headers = { 
@@ -22,7 +23,7 @@ const AddReview = () => {
                 comment: data.comment                 
             }
         axios.post('https://manufacturer-epp7.onrender.com/review', review, {headers})
-        .then(data => console.log("Review added: ", data))    
+        .then(data => data.status===200&&(alert('review added succesfully')& navigate('/')))    
     };      
 
     if(loading){

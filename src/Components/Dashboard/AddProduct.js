@@ -4,10 +4,12 @@ import { useAuthState } from 'react-firebase-hooks/auth';
 import { useForm } from 'react-hook-form';
 import auth from '../../firebase.init';
 import Loading from '../Common/Loading';
+import { useNavigate } from "react-router-dom";
 
 const AddProduct = () => {
     const [user, loading, error] = useAuthState(auth);
     const { register, handleSubmit, watch, formState: { errors }, setValue } = useForm();
+    const navigate=useNavigate();
 
     const imageStorageKey = 'e78da33c842185d44c2a1730e841497b';
 
@@ -36,7 +38,7 @@ const AddProduct = () => {
 
                     }
                     axios.post('https://manufacturer-epp7.onrender.com/product', product)
-                        .then(data => console.log("Created Successfully: ", data))
+                        .then(data =>  data.status===200&&((alert('product added succesfully'))&navigate('/')))
                 }
             })
 
